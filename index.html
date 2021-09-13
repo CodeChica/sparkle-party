@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sparkle Party</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+      function sparkleParty() {
+        let container = document.querySelector('.container')
+
+        for(let index = 255; index >= 0; index--) {
+          let div = document.createElement("div");
+          div.classList.add("confetti-" + index.toString())
+          container.appendChild(div);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>
